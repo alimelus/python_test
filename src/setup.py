@@ -9,4 +9,8 @@ setup(
   author='S0811512',
   author_email='',
   description='',
-  install_requires=['flask,'uwsgi'])
+  install_requires=[
+    'flask',
+    'uwsgi'
+  ]
+  )
