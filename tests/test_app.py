@@ -1,7 +1,5 @@
-# my_flask_app/tests/test_my_app.py
-
+from app.my_app import app
 import unittest
-from my_app import app
 
 class TestMyApp(unittest.TestCase):
 
@@ -11,7 +9,7 @@ class TestMyApp(unittest.TestCase):
     def test_hello_world(self):
         response = self.app.get('/')
         self.assertEqual(response.status_code, 200)
-        self.assertIn(b"Hello, World!", response.data)
+        self.assertEqual(response.data, b"Hello, World!")
 
     def test_alive(self):
         response = self.app.get('/health')
