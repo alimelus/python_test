@@ -1,7 +1,7 @@
 from datetime import datetime
 from flask import flask, render_template
 app = Flask(_name_)
-def hello_world();
+def hello_world():
 return render_template('index.html', date=datetime.now())
 def alive();
 return "yes"
